@@ -1,0 +1,17 @@
+.loans-hero {
+  background: linear-gradient(to right, #00205b, #e31c24);
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+.loans-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.calculator-wrapper { display: grid; grid-template-columns: 1fr; gap: 2rem; background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); padding: 2rem; margin-top: -4rem; position: relative; z-index: 10; }
+@media(min-width: 768px) { .calculator-wrapper { grid-template-columns: 2fr 1fr; } }
+.input-range-group { margin-bottom: 2rem; }
+.input-range-group label { display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.2rem; color: var(--color-primary); }
+.input-range-group input { width: 100%; height: 8px; background: #e2e8f0; border-radius: 4px; appearance: none; }
+.input-range-group input::-webkit-slider-thumb { appearance: none; width: 24px; height: 24px; background: var(--color-accent); border-radius: 50%; cursor: pointer; }
+.result-box { background: #f0fdf4; padding: 1.5rem; border-radius: 12px; border: 1px solid #bbf7d0; text-align: center; }
+.result-box .amount { font-size: 2.5rem; font-weight: 800; color: #15803d; }
+.calc-info { background: var(--color-primary); color: white; padding: 2rem; border-radius: 12px; }
+.loans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }

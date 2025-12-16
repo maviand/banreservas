@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import LandingPage from './pages/LandingPage';
+import BusinessPage from './pages/BusinessPage';
+import LoansPage from './pages/LoansPage';
 
 function App() {
   return (
@@ -11,16 +14,13 @@ function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/business" element={<BusinessPage />} />
+            <Route path="/loans" element={<LoansPage />} />
           </Routes>
         </main>
-        <footer style={{ background: 'var(--color-bg-dark)', color: 'white', padding: '2rem', textAlign: 'center' }}>
-          <div className="container">
-            <p>© 2025 Banco de Reservas de la República Dominicana. Todos los derechos reservados.</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
 }
-
 export default App;
