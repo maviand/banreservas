@@ -15,7 +15,7 @@ function App() {
         </main>
         <footer style={{ background: 'var(--color-bg-dark)', color: 'white', padding: '2rem', textAlign: 'center' }}>
           <div className="container">
-            <p> 2025 Banco de Reservas de la Rep�blica Dominicana. Todos los derechos reservados.</p>
+            <p>© 2025 Banco de Reservas de la República Dominicana. Todos los derechos reservados.</p>
           </div>
         </footer>
       </div>
